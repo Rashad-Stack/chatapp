@@ -1,0 +1,23 @@
+version: '3.2'
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: chat_app_postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: rashadstack
+      POSTGRES_PASSWORD: '@rashad8924@'
+      POSTGRES_DB: chat_app
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: 'redis:latest'
+    container_name: chat_app_redis
+    ports:
+      - '6379:6379'
+
+volumes:
+  postgres_data:
