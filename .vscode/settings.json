@@ -1,5 +1,5 @@
 {
   "material-icon-theme.activeIconPack": "nest",
   "workbench.colorTheme": "Monokai Pro",
-  "cSpell.words": ["fullname"]
+  "cSpell.words": ["fullname", "gqlctx"]
 }
